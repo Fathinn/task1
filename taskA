@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netiner/in.h>
+#include<time.h>
+#include<string.h>
+#include<sys/stdlib.h>
+#define max 30
+#define PORT 3000
+int main ()
+{
+int sersoc,clisoc,conn,len,wri;
+char str[max];
+pid_t pid;
+time_t ticks;
+socklen_t clilen;

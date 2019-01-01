@@ -1,0 +1,11 @@
+import java.io.*;
+import java.net.*;
+class JavaClient
+{
+public static void main(String args[]) throws Exception
+{
+Socket soc=new Socket("192.168.74.128",3000);
+BufferedReader in=new BufferesReader(new InputStreanReader(soc.getInputStream() ));
+System.out.println(in.readLine());
+}
+}

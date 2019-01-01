@@ -1,0 +1,10 @@
+public class JavaClient {
+public static void main (String [] args) throws IOException {
+Socket s = new Socket ("localhost",3000);
+try(InputStream in = s.getInputStream()) {
+int b;
+while ((b = in.rea())!=-1)(
+System.out.println("");
+}
+}
+}
